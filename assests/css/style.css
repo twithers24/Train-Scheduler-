@@ -1,0 +1,11 @@
+.background{
+    background-image: url("../images/train.jpg");
+}
+
+.jumbotron{
+    opacity: 0.7;
+}
+
+h1, h3{
+    font-family: 'Mina', sans-serif;
+}
