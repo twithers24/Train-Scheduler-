@@ -45,13 +45,15 @@
 
      console.log(trainName);
      console.log(destination);
-     console.log(firstTrain);
+     console.log('first train: %s', firstTrain);
      console.log(frequency);
 
     
-     var diffTime = moment().diff(moment(firstTrain), "minutes");
+     var diffTime = moment().diff(moment(firstTrain, 'X'), "minutes");
      var remainder = diffTime % frequency;
      var minutesAway = frequency - remainder;
+     debugger;
+     console.log('diffTime: %d, remainder: %d, minutes away: %d', diffTime, remainder, minutesAway);
      var nextTrain = moment().add(minutesAway, "minutes");
      var nextArrival = moment(nextTrain).format("hh:mm a");
   
